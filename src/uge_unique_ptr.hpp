@@ -1,7 +1,23 @@
 #pragma once
 
-using namespace uge
+namespace uge
 {
+    template <typename T>
+    class unique_ptr
+    {
+        public:
+        unique_ptr()
+            : val { nullptr }
+        {}
 
-    // Put your code for class unique_ptr here !
-}
+        unique_ptr(T* t)
+            : val { t }
+        {}
+
+        ~unique_ptr() { delete val;}
+
+        T* get() { return val; }
+        private:
+            T* val;
+    };
+};
