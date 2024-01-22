@@ -1,7 +1,6 @@
-#include "Person.cpp"
+#include "Person.hpp"
 #include <iostream>
 #include <vector>
-
 
 int main()
 {
