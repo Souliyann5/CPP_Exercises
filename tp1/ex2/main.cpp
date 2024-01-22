@@ -9,9 +9,9 @@ int main()
     std::string first_name;
     std::string surname;
 
-    std::cout << "Nombre de personnes : " << std::endl;
+    std::cout << "Nombre de personnes : ";
     std::cin >> nb_person;
-    std::vector<Person> vec(nb_person);
+    std::vector<Person> vec;
 
     // for (auto& p: vec)
     // {
@@ -24,9 +24,9 @@ int main()
     //     p.set_surname(surname);
     // }
 
-    for (auto& p: vec)
+    for (int i = 0; i<nb_person;  i++)
     {
-        std::cout << "Prenom + Nom" << std::endl;
+        std::cout << "Prenom + Nom : ";
         std::cin >> first_name >> surname;
 
         // Person person(first_name,surname);
